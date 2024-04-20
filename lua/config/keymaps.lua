@@ -10,3 +10,25 @@ vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
  -- builtin.grep_string({ search = vim.fn.input("Grep > ") });
 --end)
 vim.keymap.set('n', '<leader>ps', builtin.live_grep, {})
+
+
+--Harpoon
+local harpoon = require('harpoon')
+
+-- REQUIRED
+harpoon:setup()
+
+vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
+vim.keymap.set("n", "<C-d>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+
+vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
+vim.keymap.set("n", "<C-j>", function() harpoon:list():select(2) end)
+vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
+vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
+
+-- Toggle previous & next buffers stored within Harpoon list
+vim.keymap.set("n", "<C-L-M>", function() harpoon:list():prev() end)
+vim.keymap.set("n", "<C-L-N>", function() harpoon:list():next() end)
+
+vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end, --debug later
+    { desc = "Open harpoon window" })

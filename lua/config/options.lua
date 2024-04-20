@@ -41,3 +41,5 @@ vim.o.completeopt = "menuone,noselect"
 -- Set terminal gui colors to true
 vim.o.termguicolors = true
 
+-- Set mode message
+--vim.opt.showmode = false

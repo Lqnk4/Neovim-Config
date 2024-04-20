@@ -9,14 +9,7 @@ return {
   {
     'rebelot/kanagawa.nvim',
     lazy = false,
-    priority = 1000,
-    config = function()
-      require("kanagawa").load('dragon')
-
-      --Sets background transparent
-      --vim.api.nvim_set_hl(0, 'Normal', {bg = 'none'})
-      --vim.api.nvim_set_hl(0, 'NormalFloat', {bg = 'none'})
-    end
+    priority = 1000 
   }, 
   {
     'nvim-treesitter/nvim-treesitter',
@@ -28,5 +21,10 @@ return {
   {
     'nvim-treesitter/playground',
     lazy = true,
-  }
+  },
+  {
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2",
+      dependencies = { "nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim' }
+  },
 }
