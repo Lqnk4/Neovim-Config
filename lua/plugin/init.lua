@@ -7,25 +7,8 @@ return {
     dependencies = {'nvim-lua/plenary.nvim'} 
   },
   {
-    'rebelot/kanagawa.nvim',
-    lazy = false,
-    priority = 1000 
-  }, 
-  {
-    'nvim-treesitter/nvim-treesitter',
-    lazy = false,
-    config = function()
-      vim.cmd('TSUpdate')
-    end
-  },
-  {
     'nvim-treesitter/playground',
     lazy = false,
-  },
-  {
-      "ThePrimeagen/harpoon",
-      branch = "harpoon2",
-      dependencies = { "nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim' }
   },
   {
     'mbbill/undotree',
