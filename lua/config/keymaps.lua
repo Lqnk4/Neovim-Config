@@ -32,3 +32,6 @@ vim.keymap.set("n", "<leader>ln", function() harpoon:list():next() end)
 
 vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
+
+-- Undotree
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
