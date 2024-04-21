@@ -27,8 +27,8 @@ vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
 
 -- Toggle previous & next buffers stored within Harpoon list
-vim.keymap.set("n", "<C-L-M>", function() harpoon:list():prev() end)
-vim.keymap.set("n", "<C-L-N>", function() harpoon:list():next() end)
+vim.keymap.set("n", "<leader>lm", function() harpoon:list():prev() end)
+vim.keymap.set("n", "<leader>ln", function() harpoon:list():next() end)
 
-vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end, --debug later
+vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
