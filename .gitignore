@@ -1,2 +1,5 @@
 # ignore lazy.nvim plugin status
 lazy-lock.json
+
+# ignore startuptime
+startuptime.log
