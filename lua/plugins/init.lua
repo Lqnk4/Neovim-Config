@@ -20,7 +20,7 @@ return {
   },
   {
     'nvim-treesitter/playground',
-    lazy = true,
+    lazy = false,
   },
   {
       "ThePrimeagen/harpoon",
@@ -29,6 +29,10 @@ return {
   },
   {
     'mbbill/undotree',
+    lazy = false,
+  },
+  {
+    'tpope/vim-fugitive',
     lazy = false,
   },
 }

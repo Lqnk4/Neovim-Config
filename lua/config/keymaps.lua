@@ -35,3 +35,6 @@ vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
 
 -- Undotree
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+
+-- Fugitive
+vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
