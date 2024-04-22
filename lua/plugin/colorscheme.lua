@@ -3,7 +3,7 @@ local M = {
   lazy = false,
   priority = 1000,
   opts = {
-
+      compile = true,
       overrides = function(colors)
         local theme = colors.theme
         return {
