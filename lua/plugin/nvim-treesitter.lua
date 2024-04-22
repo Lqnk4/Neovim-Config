@@ -1,7 +1,8 @@
 
 local M = {
   'nvim-treesitter/nvim-treesitter',
-  lazy = false,
+  lazy = true,
+  event = "BufRead",
   build = ":TSUpdate",
   opts = {
       -- A list of parser names, or "all" (the five listed parsers should always be installed)

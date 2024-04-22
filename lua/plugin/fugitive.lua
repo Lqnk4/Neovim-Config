@@ -1,6 +1,10 @@
 local M = {
   'tpope/vim-fugitive',
-  lazy = false,
+  lazy = true,
+  keys = {
+    { '<leader>gs', vim.cmd.Git },
+  },
 }
 
 return M
+
