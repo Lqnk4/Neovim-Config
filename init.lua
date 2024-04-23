@@ -8,4 +8,5 @@ require("config.lazy")
 --source vim options, keymaps 
 require("config.options")
 require("config.keymaps")
+require("config.autocmds")
 

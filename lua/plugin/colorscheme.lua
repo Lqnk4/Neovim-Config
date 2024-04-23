@@ -39,6 +39,6 @@ local M = {
 
     vim.cmd('colorscheme kanagawa-dragon')
   end
-} 
+}
 
 return M
