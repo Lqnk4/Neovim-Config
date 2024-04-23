@@ -38,10 +38,6 @@ local M = {
       {  "<C-k>", function() harpoon:list():select(3) end },
       {  "<C-l>", function() harpoon:list():select(4) end },
 
-      -- Toggle previous & next buffers stored within Harpoon list
-      {  "<C-o>", function() harpoon:list():prev() end },
-      {  "<C-i>", function() harpoon:list():next() end },
-
       {  "<C-e>", function() toggle_telescope(harpoon:list()) end,
           { desc = "Open harpoon window" } },
     } end,
