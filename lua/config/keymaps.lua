@@ -9,11 +9,17 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, options)
 end
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- Oil file manager
+map("n", "<leader>pv", '<cmd>lua vim.cmd.Oil()<cr>')
 
 -- buffers
-map("n", "<tab>", ":bn<cr>", {})
-map("n", "<s-tab>", ":bp<cr>", {})
+map("n", "[b", ":bn<cr>", {})
+map("n", "]b", ":bp<cr>", {})
+
+-- move lines up or down
+map( {'n', 'i', 'v' }, '<A-j>', '<cmd>:m .+1<CR>')
+map( {'n', 'i', 'v' }, '<A-k>', '<cmd>:m .-2<CR>')
+
 
 -- note: diagnostics are not exclusive to lsp servers
 -- so these can be global keybindings
