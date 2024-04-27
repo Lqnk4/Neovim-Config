@@ -39,7 +39,11 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = "menuone,noselect"
 
 -- Set terminal gui colors to true
+
+--Status line
+--vim.o.statusline = require('config.statusline').statusline()
 vim.o.termguicolors = true
 
 -- Set mode message
 --vim.opt.showmode = false
+
