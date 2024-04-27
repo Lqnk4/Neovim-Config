@@ -5,6 +5,9 @@ vim.o.hlsearch = false
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+-- Highlight current line
+vim.opt.cursorline = true
+
 vim.o.tabstop = 2 -- A TAB character looks like 2 spaces
 vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
 vim.o.softtabstop = 2 -- Number of spaces inserted instead of a TAB character
@@ -39,9 +42,6 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = "menuone,noselect"
 
 -- Set terminal gui colors to true
-
---Status line
---vim.o.statusline = require('config.statusline').statusline()
 vim.o.termguicolors = true
 
 -- Set mode message
