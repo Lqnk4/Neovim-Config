@@ -19,6 +19,7 @@
   "oil.nvim": { "branch": "master", "commit": "3b3a6b23a120e69ddc980c9d32840ecd521fbff9" },
   "plenary.nvim": { "branch": "master", "commit": "5129a3693c482fcbc5ab99a7706ffc4360b995a0" },
   "telescope.nvim": { "branch": "0.1.x", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
+  "trouble.nvim": { "branch": "main", "commit": "b9cf677f20bb2faa2dacfa870b084e568dca9572" },
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" },
   "vim-fugitive": { "branch": "master", "commit": "dac8e5c2d85926df92672bf2afb4fc48656d96c7" }
 }
