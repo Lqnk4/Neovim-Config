@@ -32,7 +32,7 @@ local M = {
     "williamboman/mason-lspconfig.nvim",
     dependencies = {'hrsh7th/cmp-nvim-lsp', 'neovim/nvim-lspconfig', 'williamboman/mason.nvim', },
     opts = {
-      ensure_installed = {"lua_ls", "rust_analyzer", "clangd", },
+      ensure_installed = {"lua_ls", "rust_analyzer", "clangd", "jedi_language_server", },
       handlers = {
         default_setup,
         ["lua_ls"] = lua_ls,
