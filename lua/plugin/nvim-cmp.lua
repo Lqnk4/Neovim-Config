@@ -13,23 +13,24 @@ local M = {
     event = "InsertEnter",
 }
 
+
+
 M.config = function()
     local cmp = require('cmp')
     --local select_opts = {behavior = cmp.SelectBehavior.Select}
     local select_opts = { behavior = cmp.SelectBehavior.Select }
     local luasnip = require('luasnip')
     cmp.setup({
-        --global completion popup toggle
-        completion  = {
-            autocomplete = false,
-        },
         sources = {
             { name = 'nvim_lsp' },
+            { name = 'nvim_lua' },
+            { name = 'path' },
             { name = 'buffer' },
             { name = 'luasnip' },
         },
         window = {
-            documentation = cmp.config.window.bordered()
+            documentation = cmp.config.window.bordered(),
+            --completion = cmp.config.window.bordered(),
         },
         formatting = {
             fields = { 'menu', 'abbr', 'kind' },

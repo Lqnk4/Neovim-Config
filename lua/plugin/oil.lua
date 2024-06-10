@@ -8,7 +8,7 @@ local M = {
     keymaps = {
         ["g?"] = "actions.show_help",
         ["<CR>"] = "actions.select",
-        ["<C-s>"] = "actions.select_vsplit",
+        ["<C-v>"] = "actions.select_vsplit",
         --Disabled for harpoon
         --["<C-h>"] = "actions.select_split",
         ["<C-t>"] = "actions.select_tab",

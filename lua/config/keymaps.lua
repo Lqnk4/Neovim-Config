@@ -13,8 +13,8 @@ end
 map("n", "<leader>pv", '<cmd>lua vim.cmd.Oil()<cr>')
 
 -- buffers
-map("n", "[b", ":bn<cr>", {})
-map("n", "]b", ":bp<cr>", {})
+map("n", "[b", ":bp<cr>", {})
+map("n", "]b", ":bn<cr>", {})
 
 -- move lines up or down
 map( {'n', 'i', 'v' }, '<A-j>', '<cmd>:m .+1<CR>')
